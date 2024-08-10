@@ -1,0 +1,62 @@
+MySql Workbench Download Link:
+
+https://www.mysql.com/products/workbench/
+
+Accessing DB:
+	Ipaddress(server address)
+	user name
+	password 
+	Database Name
+	
+If you want to install mysql db in local:
+
+https://dev.mysql.com/downloads/windows/installer/8.0.html
+
+https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.11.0.msi
+
+mysql connector for python :
++++++++++++++++++++++++++++++++++++++++++++++
+https://dev.mysql.com/downloads/connector/python/
+After sucessfull installation you can access through command line.
+
+
+Create a database:
++++++++++++++++++++++++++++++++++
+create databse student2;
+
+show databases;-->Display all the available db in ur system
+
+use student;
+
+Description of the table
+desc pyrock;
+
+truncate table urlinfo;
+
+select count(*) from urlinfo;
+
+++++++++++
+Mysql connector python 2.7 or 3.6
+
+Steps for doing DB operation in Python:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++=
+1.Create Table manually
+2.Install DB Module()
+3.Install a connector for MySQL
+4.Establish Db connection which needs a connect method and the conncetion string(servername,
+user id,pwd,db name)
+5.creta a cursor()
+6.Prepare ur query string
+7.Exccute the Query string with the help of execute method
+8.Fetch records in case of select Query or write a commit statement with db object for insert operation
+9.Traverse through the Tuple
+
+create table fileinfo(id int(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+		      filename varchar(50) NOT NULL,filesize BIGINT NOT NULL,
+		      createdDate datetime)
+
+cREATE TABLE MyGuests (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+firstname VARCHAR(30) NOT NULL,lastname VARCHAR(30) NOT NULL,
+email VARCHAR(50),reg_date TIMESTAMP)
+
